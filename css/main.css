@@ -10,6 +10,15 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     color: #fff;
 }
+/* Preload das imagens de fundo */
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../img/big0.jpg) url(../img/big1.jpg) url(../img/big2.jpg) url(../img/big3.jpg) url(../img/big4.jpg) url(../img/big5.jpg) url(../img/big6.jpg) url(../img/big7.jpg) url(../img/big8.jpg) url(../img/big9.jpg);
+}
 
 .container {
     padding-left: 3vw;
