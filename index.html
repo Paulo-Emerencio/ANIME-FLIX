@@ -20,7 +20,29 @@
     <header>
         <div class="container">
             <h2 class="logo">ANIME FLIX</h2>
-            <nav>
+            <!-- Menu Mobile -->
+            <nav class="mobile">
+                <i class="fas fa-bars" id="open-menu"></i>
+
+                <ul class="menu">
+                    <i class="fas fa-times" id="close-menu"></i>
+
+                    <li class="menu-item">
+                        <a href="https://myanimelist.net/anime.php" target="_blank" class="menu-item-action">Animes</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://myanimelist.net/topanime.php" target="_blank" class="menu-item-action">Ranking</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://myanimelist.net/anime/season" target="_blank" class="menu-item-action">Recentes</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://myanimelist.net/animelist/Hollow-Soulheart" target="_blank" class="menu-item-action">Minha Lista</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Menu Desktop -->
+            <nav class="desktop">
                 <a href="https://myanimelist.net/anime.php" target="_blank">Animes</a>
                 <a href="https://myanimelist.net/topanime.php" target="_blank">Ranking</a>
                 <a href="https://myanimelist.net/anime/season" target="_blank">Recentes</a>
@@ -47,7 +69,7 @@
             </div>
         </div>
 
-        <div class="movies-carousel">
+        <div class="animes-carousel">
             <h4>Meus 10 animes favoritos</h4>
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -93,7 +115,8 @@
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
     <!-- Meu JS -->
-    <script src="js/animeInfo.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/mobile.menu.js"></script>
+    <script src="js/anime.info.js"></script>
+    <script src="js/change.anime.js"></script>
 </body>
 </html>
