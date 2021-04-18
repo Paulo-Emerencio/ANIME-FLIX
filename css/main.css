@@ -268,4 +268,13 @@ footer {
     header .mobile .menu .menu-item .menu-item-action:hover {
         color: #fff;
     }
+    .main-anime .container {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 380px) {
+    .main-anime .container {
+        width: 100vw;
+    }
 }
