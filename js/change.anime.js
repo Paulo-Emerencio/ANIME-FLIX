@@ -18,11 +18,13 @@ $boxAnime.classList.add("element-active");
 
 let lastAnimeNumber = 0;
 
-function fadeIn(elemento) {
+let autoChange;
+
+function fadeIn(anime) {
     let op = 0;
-    let timer = setInterval(function () {
-        if (op >= 100) clearInterval(timer);
-        elemento.style.filter = `opacity(${op}%)`;
+    let fade = setInterval(function () {
+        if (op >= 100) clearInterval(fade);
+        anime.style.filter = `opacity(${op}%)`;
         op += 2.5;
     }, 8);
 }
@@ -43,5 +45,19 @@ function changeAnime(animeNumber) {
         $boxAnime.classList.add("element-active");
 
         lastAnimeNumber = animeNumber;
+
+        clearInterval(autoChange);
+        autoChangeAnime();
     }
 }
+
+function autoChangeAnime() {
+    autoChange = setInterval(function(){
+        if (lastAnimeNumber < 9) {
+            changeAnime(lastAnimeNumber + 1);
+        } else {
+            changeAnime(0);
+        }
+    }, 60000);
+}
+autoChangeAnime();
