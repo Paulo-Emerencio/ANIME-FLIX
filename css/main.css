@@ -48,16 +48,19 @@ header .logo {
     font-weight: 700;
     color: var(--vermelho);
 }
-header .mobile {
+#open-menu, #close-menu {
     display: none;
 }
-header .desktop a {
+header nav li {
+    display: inline-block;
+}
+header nav a {
     text-decoration: none;
     color: #bebebe;
 
     margin-left: 3vw;
 }
-header .desktop a:hover {
+header nav a:hover {
     color: #fff;
 }
 
@@ -152,129 +155,4 @@ footer {
     color: #757575;
     text-align: center;
     line-height: 6vh;
-}
-
-@media (max-width: 1220px) {
-    header .container {
-        background-image: linear-gradient(black, rgba(0,0,0,.9), rgba(0,0,0,0));
-    }
-    header .container:hover {
-        background-color: unset;
-    }
-    .main-anime .container {
-        width: 60vw;
-    }
-}
-
-@media (max-width: 998px) {
-    .main-anime .title {
-        font-size: 36px;
-    }
-    .main-anime .description {
-        font-size: 15px;
-        line-height: 1.6;
-    }
-    .main-anime .btn {
-        padding: 12px 24px;
-    }
-    .animes-carousel h4 {
-        font-size: 17px;
-    }
-}
-
-@media (max-width: 754px) {
-    header .logo {
-        font-size: 36px;
-    }
-    header .desktop a {
-        font-size: 15px;
-    }
-    .main-anime .title {
-        font-size: 32px;
-    }
-    .main-anime .description {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-}
-
-@media (max-width: 630px) {
-    header .logo {
-        font-size: 32px;
-    }
-    .main-anime .btn {
-        padding: 10px 20px;
-    }
-    .main-anime .container {
-        width: 70vw;
-    }
-}
-
-@media (max-width: 538px) {
-    header .logo {
-        font-size: 28px;
-    }
-    header .desktop a {
-        font-size: 14px;
-    }
-    .main-anime .container {
-        width: 80vw;
-    }
-}
-
-/* Menu Mobile */
-@media (max-width: 487px) {
-    header .container {
-        justify-content: space-between;
-    }
-    header .desktop {
-        display: none;
-    }
-    header .mobile {
-        display: block;
-        text-align: right;
-    }
-    header .mobile .fas {
-        font-size: 24px;
-        color: #aaa;
-        cursor: pointer;
-    }
-    .menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 40%;
-        border-left: 1px solid #757575;
-        background-color: var(--preto);
-
-        transform: translateX(100%);
-        transition: transform 200ms ease-in;
-    }
-    .opened {
-        transform: translateX(0);
-    }
-    header .mobile .menu #close-menu {
-        padding-top: 10px;
-        padding-right: 3vw;
-    }
-    header .mobile .menu .menu-item {
-        padding: 5vw 3vw;
-        border-bottom: 1px solid #757575;
-    }
-    header .mobile .menu .menu-item .menu-item-action {
-        color: #aaa;
-        text-decoration: none;
-    }
-    header .mobile .menu .menu-item .menu-item-action:hover {
-        color: #fff;
-    }
-    .main-anime .container {
-        width: 90vw;
-    }
-}
-
-@media (max-width: 380px) {
-    .main-anime .container {
-        width: 100vw;
-    }
 }
