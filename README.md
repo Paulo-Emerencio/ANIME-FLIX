@@ -3,9 +3,9 @@ Página baseada no layout da Netflix, onde exibo de forma dinâmica meus 10 anim
 
 > Link da página funcionando: https://paulo-emerencio.github.io/ANIME-FLIX/
 
-```sh
-Nota importante: O javascript neste projeto é totalmente autoral, me desafiei a escreve-lo sem consultar nenhum tutorial, usando apenas o conhecimento que adquiri até aqui. Portanto, programadores experientes podem encontrar “más práticas” no meu código, mas eu estou feliz de ter conseguido fazer tudo funcionar como eu queria, usando apenas minha cabeça, depois eu me concentro em aprender boas práticas 😅. 
-```
+
+- Nota importante: O javascript neste projeto é totalmente autoral, me desafiei a escreve-lo sem consultar nenhum tutorial, usando apenas o conhecimento que adquiri até aqui. Portanto, programadores experientes podem encontrar “más práticas” no meu código, mas eu estou feliz de ter conseguido fazer tudo funcionar como eu queria, usando apenas minha cabeça, depois eu me concentro em aprender boas práticas 😅. 
+
 
 
 
