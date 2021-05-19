@@ -13,7 +13,7 @@ $trailer.href = trailers[0];
 const $list = document.querySelector("#list");
 $list.href = lista[0];
 
-let $boxAnime = document.getElementsByClassName("box-anime")[0];
+let $boxAnime = document.querySelectorAll(".box-anime")[0];
 $boxAnime.classList.add("element-active");
 
 let lastAnimeNumber = 0;
@@ -41,7 +41,7 @@ function changeAnime(animeNumber) {
         $list.href = lista[animeNumber];
         fadeIn($mainAnime);
 
-        $boxAnime = document.getElementsByClassName("box-anime")[animeNumber];
+        $boxAnime = document.querySelectorAll(".box-anime")[animeNumber];
         $boxAnime.classList.add("element-active");
 
         lastAnimeNumber = animeNumber;
